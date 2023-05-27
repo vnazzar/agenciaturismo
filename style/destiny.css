@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box; /*no crece mas alla del tamaño*/
+    /*margin: 0; le saca el margen a todo*/
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; /*margen*/
+}
+
+
+/*hasta aca estan definida los estilos  generales de la web*/
+
+.container{
+    max-width: 1400px; /*margen maximo*/
+    margin: auto; /*margenes automaticos*/
+}
+
+header{
+    background: linear-gradient(-45deg, #eca38c, #ebe486, #94eb91, #f3f0ed); 
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+
+header .logo{
+    margin: 0;
+    padding: 25px;
+    font-weight: bold;
+    color: rgb(43, 144, 226);
+    font-size: 1.35em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column; /*se ordenan en una columna*/
+    align-items: center;   
+}
+
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(43, 144, 226);
+}
+
+
+#destinos .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#destinos h1 {
+    margin-top: 40px;
+}
+
+#destinos .texto{
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.flex-container{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 200vh;
+    align-items: baseline; /*centra en la mitad de la pantalla*/
+ }
+ 
+ .flex-item{
+     background-color: #248;
+     color: #fff;
+     margin: 5px;
+     height: 300px;
+     min-width: 120px;
+     text-align: center;
+     border-radius: 5px;
+     flex-grow: 1;
+ }
+
+  
+ .america{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0),
+            rgba(0,0,0,0)
+        )
+        ,url("/img/america.jpg");
+        background-repeat: no-repeat;
+ }
+
+ .america:hover{
+   color: rgb(43, 144, 226)
+}
+
+ .africa{
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0),
+            rgba(0,0,0,0)
+        )
+        ,url("/img/africa.jpg");
+        background-repeat: no-repeat;
+ }
+
+ .africa:hover{
+    color: rgb(43, 144, 226)
+}
+
+ .europa{
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0),
+            rgba(0,0,0,0)
+        )
+        ,url("/img/europa.jpg");
+        background-repeat: no-repeat;
+ }
+
+ .europa:hover{
+    color: rgb(43, 144, 226)
+}
+
+ .oceania{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0),
+        rgba(0,0,0,0)
+        
+    )
+    ,url("/img/oceania.jpg");
+    background-repeat: no-repeat;
+ }
+
+ .oceania:hover{
+    color: rgb(43, 144, 226)
+}
+
+ .asia{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0),
+        rgba(0,0,0,0)
+    )
+    ,url("/img/asia.jpg");
+    background-repeat: no-repeat;
+ }
+
+ .asia:hover{
+    color: rgb(43, 144, 226)
+}
+
+ 
+footer {
+    background: linear-gradient(-45deg, #eca38c, #ebe486, #94eb91, #f3f0ed); 
+    background-size: 300% 400%;
+    animation: gradient 15s ease infinite;
+    margin-top: 0;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+  
+#content-footer .logo-footer{
+    margin-left: 20px;
+}
+
+footer .redes{
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(10, 60, 224);
+}
+
+
+
+/*Version para escritorio*/
+
+@media (min-width: 720px){
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+
+    #destinos .container {
+        margin-left: 30px;
+        width: 1200px;
+        height: 400px;
+        flex-wrap: wrap;
+    } 
+
+    .flex-container{
+        height: 50vh;
+        
+     }
+    
+    
+    #destinos .img-destinos {
+        background-image: url("/img/mapamundi.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 500px;
+        margin: 20px 10px 20px 10px;
+        float: left; 
+        flex-direction: column;
+    }
+
+    #destinos .texto{
+        width: 30%;
+        max-width: 30%;
+        text-align: center;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    footer{
+        margin-top: 30px;
+    }
+}
