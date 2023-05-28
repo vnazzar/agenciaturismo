@@ -122,7 +122,7 @@ header a:hover{
             rgba(0,0,0,0),
             rgba(0,0,0,0)
         )
-        ,url("/img/america.jpg");
+        ,url("../img/america.jpg");
         background-repeat: no-repeat;
  }
 
@@ -136,7 +136,7 @@ header a:hover{
             rgba(0,0,0,0),
             rgba(0,0,0,0)
         )
-        ,url("/img/africa.jpg");
+        ,url("../img/africa.jpg");
         background-repeat: no-repeat;
  }
 
@@ -150,7 +150,7 @@ header a:hover{
             rgba(0,0,0,0),
             rgba(0,0,0,0)
         )
-        ,url("/img/europa.jpg");
+        ,url("../img/europa.jpg");
         background-repeat: no-repeat;
  }
 
@@ -165,7 +165,7 @@ header a:hover{
         rgba(0,0,0,0)
         
     )
-    ,url("/img/oceania.jpg");
+    ,url("../img/oceania.jpg");
     background-repeat: no-repeat;
  }
 
@@ -179,7 +179,7 @@ header a:hover{
         rgba(0,0,0,0),
         rgba(0,0,0,0)
     )
-    ,url("/img/asia.jpg");
+    ,url("../img/asia.jpg");
     background-repeat: no-repeat;
  }
 
@@ -257,7 +257,7 @@ footer p{
     
     
     #destinos .img-destinos {
-        background-image: url("/img/mapamundi.jpg");
+        background-image: url("../img/mapamundi.jpg");
         background-size: cover;
         background-position: center center;
         height: 300px;

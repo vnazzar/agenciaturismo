@@ -374,7 +374,7 @@ footer p{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("/img/viajes-grupales.jpg");
+        ,url("../img/viajes-grupales.jpg");
     }
     
     .carta:nth-child(2){
