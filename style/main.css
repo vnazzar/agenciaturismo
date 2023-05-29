@@ -112,7 +112,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("/img/miami.jpg");
+    ,url("../img/miami.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -174,7 +174,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("/img/viajes-grupales.jpg");
+    ,url("../img/viajes-grupales.jpg");
 }    
 
 .carta:nth-child(2){
@@ -183,7 +183,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("/img/salto-grupo-surf.jpg");
+    ,url("../img/salto-grupo-surf.jpg");
 }
 
 .carta:nth-child(3){
@@ -192,7 +192,7 @@ header a:hover{
         rgba(0,0,0,1),
         rgba(0,0,0,1)
     )
-    ,url("/img/viajes-negocios.jpg")
+    ,url("../img/viajes-negocios.jpg")
 }
 
 
@@ -333,7 +333,7 @@ footer p{
    
 
     #quienes-somos .img-container {
-        background-image: url("/img/lisboa.jpeg");
+        background-image: url("../img/lisboa.jpeg");
         background-size: cover;
         background-position: center center;
         height: 500px;
@@ -383,7 +383,7 @@ footer p{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("/img/salto-grupo-surf.jpg");
+        ,url("../img/salto-grupo-surf.jpg");
     
     }
     
@@ -393,7 +393,7 @@ footer p{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("/img/viajes-negocios.jpg");
+        ,url("../img/viajes-negocios.jpg");
     }
 
     footer .container{
